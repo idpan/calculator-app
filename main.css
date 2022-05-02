@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  --fw-bold: 700;
+  /* main_theme */
+  /* background */
+  --main-backgorund: hsl(222, 26%, 31%);
+  --display-background: hsl(224, 36%, 15%);
+  --keypad-background: hsl(223, 31%, 20%);
+  --toggle-background: hsl(223, 31%, 20%);
+  --toggle-pointer: hsl(6, 63%, 50%);
+  /* keys-background */
+  --main-key-background: hsl(30, 25%, 89%);
+  --util-key-background: hsl(225, 21%, 49%);
+  --equal-btn-background: hsl(6, 63%, 50%);
+  /* keys-shadow */
+  --main-key-shadow: hsl(28, 16%, 65%);
+  --util-key-shadow: hsl(224, 28%, 35%);
+  --equal-btn-shadow: hsl(6, 70%, 34%);
+  /* text-color */
+  --main-text-color: hsl(221, 14%, 31%);
+  --main-key-text-color: white;
+  --util-key-text-color: white;
+  --equal-key-text-color: white;
+}
+.theme_2 {
+  /* background */
+  --main-backgorund: hsl(0, 0%, 90%);
+  --display-background: hsl(0, 0%, 93%);
+  --keypad-background: hsl(0, 5%, 81%);
+  --toggle-background: hsl(0, 5%, 81%);
+  --toggle-pointer: hsl(25, 98%, 40%);
+  /* keys-background */
+  --main-key-background: hsl(45, 7%, 89%);
+  --util-key-background: hsl(185, 42%, 37%);
+  --equal-btn-background: hsl(25, 98%, 40%);
+  /* keys-shadow */
+  --main-key-shadow: hsl(35, 11%, 61%);
+  --util-key-shadow: hsl(185, 58%, 25%);
+  --equal-key-shadow: hsl(25, 99%, 27%);
+  /* text-color */
+  --text-main-color: white;
+  --main-key-text-color: hsl(60, 10%, 19%);
+  --util-key-text-color: white;
+  --equal-key-text-color: white;
+}
+.theme_3 {
+  /* background */
+  --main-backgorund: hsl(268, 75%, 9%);
+  --display-background: hsl(268, 71%, 12%);
+  --keypad-background: hsl(268, 71%, 12%);
+  --toggle-background: hsl(268, 71%, 12%);
+  --toggle-pointer: hsl(176, 100%, 44%);
+  /* keys-background */
+  --main-key-background: hsl(268, 47%, 21%);
+  --util-key-background: hsl(281, 89%, 26%);
+  --equal-btn-background: hsl(176, 100%, 44%);
+  /* keys-shadow */
+  --main-key-shadow: hsl(290, 70%, 36%);
+  --util-key-shadow: hsl(285, 91%, 52%);
+  --equal-key-shadow: hsl(177, 92%, 70%);
+  /* text-color */
+  --text-main-color: hsl(52, 100%, 62%);
+  --main-key-text-color: hsl(52, 100%, 62%);
+  --util-key-text-color: white;
+  --equal-key-text-color: hsl(198, 20%, 13%);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 2rem;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
