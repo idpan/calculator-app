@@ -14,6 +14,10 @@ body {
   font-family: "League Spartan", sans-serif;
   border: none;
 }
+button {
+  cursor: pointer;
+}
+
 :root {
   font-size: 16px;
   --fw-bold: 700;
@@ -32,6 +36,12 @@ body {
   --main-key-shadow: hsl(28, 16%, 65%);
   --util-key-shadow: hsl(224, 28%, 35%);
   --equal-key-shadow: hsl(6, 70%, 34%);
+  /* key-hover */
+
+  --main-key-hover: hsl(30, 25%, 80%);
+  --equal-key-hover: hsl(6, 80%, 55%);
+  --util-key-hover: hsl(225, 21%, 40%);
+
   /* text-color */
   --main-text-color: white;
   --main-key-text-color: hsl(221, 14%, 31%);
@@ -53,6 +63,11 @@ body {
   --main-key-shadow: hsl(35, 11%, 61%);
   --util-key-shadow: hsl(185, 58%, 25%);
   --equal-key-shadow: hsl(25, 99%, 27%);
+  /* key-hover */
+  --main-key-hover: hsl(45, 7%, 85%);
+  --equal-key-hover: hsl(25, 98%, 45%);
+  --util-key-hover: hsl(185, 42%, 42%);
+
   /* text-color */
   --main-text-color: hsl(60, 10%, 19%);
   --main-key-text-color: hsl(60, 10%, 19%);
@@ -74,6 +89,11 @@ body {
   --main-key-shadow: hsl(290, 70%, 36%);
   --util-key-shadow: hsl(285, 91%, 52%);
   --equal-key-shadow: hsl(177, 92%, 70%);
+  /* key-hover */
+  --main-key-hover: hsl(268, 47%, 31%);
+  --equal-key-hover: hsl(176, 100%, 34%);
+  --util-key-hover: hsl(281, 89%, 36%);
+
   /* text-color */
   --main-text-color: hsl(52, 100%, 62%);
   --main-key-text-color: hsl(52, 100%, 62%);
@@ -173,9 +193,10 @@ header .theme__pointer {
   padding: 1.7rem;
   text-align: right;
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 0.7rem;
   border: transparent;
+  letter-spacing: 3px;
 }
 /* ---------- styling keypad ---------- */
 #keypad {
@@ -247,4 +268,15 @@ button > span {
 #equal-key {
   grid-column-start: 3;
   grid-column-end: 5;
+}
+button:hover {
+  background-color: var(--main-key-hover) !important;
+}
+
+#reset-key:hover,
+#delete-key:hover {
+  background-color: var(--util-key-hover) !important;
+}
+#equal-key:hover {
+  background-color: var(--equal-key-hover) !important;
 }
