@@ -38,34 +38,35 @@
             </div>
           </div>
         </header>
-        <form action="">
-          <section id="screen">
-            <input type="text" autocomplete="off" />
-          </section>
-          <section id="keypad">
-            <!-- num button -->
-            <button class="num-key" data-num="1">1</button>
-            <button class="num-key" data-num="2">2</button>
-            <button class="num-key" data-num="3">3</button>
-            <button class="num-key" data-num="4">4</button>
-            <button class="num-key" data-num="5">5</button>
-            <button class="num-key" data-num="6">6</button>
-            <button class="num-key" data-num="7">7</button>
-            <button class="num-key" data-num="8">8</button>
-            <button class="num-key" data-num="9">9</button>
-            <button class="num-key" data-num="0">0</button>
-            <!-- operation button -->
-            <button class="opr-key" data-opr="addition">+</button>
-            <button class="opr-key" data-opr="substraction">-</button>
-            <button class="opr-key" data-opr="multiplication">x</button>
-            <button class="opr-key" data-opr="division">/</button>
-            <!-- utility button -->
-            <button class="util-key">del</button>
-            <button class="util-key">reset</button>
-            <!-- equal key -->
-            <button class="equal-key">=</button>
-          </section>
-        </form>
+
+        <section id="screen">
+          <input type="text" autocomplete="off" />
+        </section>
+        <section id="keypad">
+          <!-- row__1 -->
+          <button data-num="7"><span> 7 </span></button>
+          <button data-num="8"><span> 8 </span></button>
+          <button data-num="9"><span> 9 </span></button>
+          <button id="delete-key"><span> DEL </span></button>
+          <!--  row__2 -->
+          <button data-num="4"><span> 4 </span></button>
+          <button data-num="5"><span> 5 </span></button>
+          <button data-num="6"><span> 6 </span></button>
+          <button data-opr="addition"><span>+</span></button>
+          <!--  row__3 -->
+          <button data-num="1"><span> 1 </span></button>
+          <button data-num="2"><span> 2 </span></button>
+          <button data-num="3"><span> 3 </span></button>
+          <button data-opr="substraction"><span> - </span></button>
+          <!-- row__4 -->
+          <button id="point-key"><span> . </span></button>
+          <button data-num="0"><span> 0 </span></button>
+          <button data-opr="division"><span> / </span></button>
+          <button data-opr="multiplication"><span> x </span></button>
+          <!-- row__5 -->
+          <button id="reset-key"><span> RESET </span></button>
+          <button id="equal-key"><span> = </span></button>
+        </section>
       </div>
 
       <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.instagram.com/idpanashari/" target="_blank">idpan</a>.</div>
