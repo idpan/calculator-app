@@ -6,7 +6,7 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
+    <link rel="stylesheet" href="./main.css" />
     <title>Calculator app</title>
 
     <style>
@@ -20,47 +20,49 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1 class="title">calc</h1>
-        <div class="theme">
-          <h3 class="theme__text">THEME</h3>
-          <div>
-            <input class="theme__button" type="radio" />
-            <input class="theme__button" type="radio" />
-            <input class="theme__button" type="radio" />
-            <div class="theme__status">
-              <div></div>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <h1 class="title">calc</h1>
+          <div class="theme">
+            <h3 class="theme__text">THEME</h3>
+            <div>
+              <input class="theme__button" type="radio" />
+              <input class="theme__button" type="radio" />
+              <input class="theme__button" type="radio" />
+              <div>
+                <div class="theme__pointer"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </header>
-      <section class="display-screen"></section>
-      <section class="button-container">
-        <!-- num button -->
-        <button class="num" data-num="1">1</button>
-        <button class="num" data-num="2">2</button>
-        <button class="num" data-num="3">3</button>
-        <button class="num" data-num="4">4</button>
-        <button class="num" data-num="5">5</button>
-        <button class="num" data-num="6">6</button>
-        <button class="num" data-num="7">7</button>
-        <button class="num" data-num="8">8</button>
-        <button class="num" data-num="9">9</button>
-        <button class="num" data-num="0">0</button>
-        <!-- operation button -->
-        <button class="opr" data-opr="addition">+</button>
-        <button class="opr" data-opr="substraction">-</button>
-        <button class="opr" data-opr="multiplication">x</button>
-        <button class="opr" data-opr="division">/</button>
-        <!-- utility button -->
-        <button class="util">del</button>
-        <button class="util">reset</button>
-        <!-- equal btn -->
-        <button class="equal">=</button>
-      </section>
-    </div>
+        </header>
+        <section class="screen"></section>
+        <section class="keypad">
+          <!-- num button -->
+          <button class="num-btn" data-num="1">1</button>
+          <button class="num-btn" data-num="2">2</button>
+          <button class="num-btn" data-num="3">3</button>
+          <button class="num-btn" data-num="4">4</button>
+          <button class="num-btn" data-num="5">5</button>
+          <button class="num-btn" data-num="6">6</button>
+          <button class="num-btn" data-num="7">7</button>
+          <button class="num-btn" data-num="8">8</button>
+          <button class="num-btn" data-num="9">9</button>
+          <button class="num-btn" data-num="0">0</button>
+          <!-- operation button -->
+          <button class="opr-btn" data-opr="addition">+</button>
+          <button class="opr-btn" data-opr="substraction">-</button>
+          <button class="opr-btn" data-opr="multiplication">x</button>
+          <button class="opr-btn" data-opr="division">/</button>
+          <!-- utility button -->
+          <button class="util-btn">del</button>
+          <button class="util-btn">reset</button>
+          <!-- equal btn -->
+          <button class="equal-btn">=</button>
+        </section>
+      </div>
 
-    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+    </div>
   </body>
 </html>
