@@ -7,17 +7,8 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="./main.css" />
-    <title>Calculator app</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Calculator app</title>
   </head>
   <body>
     <div class="wrapper">
@@ -27,42 +18,58 @@
           <div class="theme">
             <h3 class="theme__text">THEME</h3>
             <div>
-              <input class="theme__button" type="radio" />
-              <input class="theme__button" type="radio" />
-              <input class="theme__button" type="radio" />
-              <div>
+              <div class="theme__toggle">
+                <label for="THEME_DEFAULT">
+                  <span>1</span>
+                  <input name="THEME_TOGGLE" type="radio" data-theme="THEME_DEFAULT" id="THEME_DEFAULT" />
+                </label>
+                <label for="THEME_2">
+                  <span>2</span>
+                  <input name="THEME_TOGGLE" type="radio" data-theme="THEME_2" id="THEME_2" />
+                </label>
+                <label for="THEME_3">
+                  <span>3</span>
+                  <input name="THEME_TOGGLE" type="radio" data-theme="THEME_3" id="THEME_3" />
+                </label>
+              </div>
+              <div class="theme__pointer-back">
                 <div class="theme__pointer"></div>
               </div>
             </div>
           </div>
         </header>
-        <section class="screen"></section>
-        <section class="keypad">
-          <!-- num button -->
-          <button class="num-btn" data-num="1">1</button>
-          <button class="num-btn" data-num="2">2</button>
-          <button class="num-btn" data-num="3">3</button>
-          <button class="num-btn" data-num="4">4</button>
-          <button class="num-btn" data-num="5">5</button>
-          <button class="num-btn" data-num="6">6</button>
-          <button class="num-btn" data-num="7">7</button>
-          <button class="num-btn" data-num="8">8</button>
-          <button class="num-btn" data-num="9">9</button>
-          <button class="num-btn" data-num="0">0</button>
-          <!-- operation button -->
-          <button class="opr-btn" data-opr="addition">+</button>
-          <button class="opr-btn" data-opr="substraction">-</button>
-          <button class="opr-btn" data-opr="multiplication">x</button>
-          <button class="opr-btn" data-opr="division">/</button>
-          <!-- utility button -->
-          <button class="util-btn">del</button>
-          <button class="util-btn">reset</button>
-          <!-- equal btn -->
-          <button class="equal-btn">=</button>
-        </section>
+        <form action="">
+          <section id="screen">
+            <input type="text" autocomplete="off" />
+          </section>
+          <section id="keypad">
+            <!-- num button -->
+            <button class="num-key" data-num="1">1</button>
+            <button class="num-key" data-num="2">2</button>
+            <button class="num-key" data-num="3">3</button>
+            <button class="num-key" data-num="4">4</button>
+            <button class="num-key" data-num="5">5</button>
+            <button class="num-key" data-num="6">6</button>
+            <button class="num-key" data-num="7">7</button>
+            <button class="num-key" data-num="8">8</button>
+            <button class="num-key" data-num="9">9</button>
+            <button class="num-key" data-num="0">0</button>
+            <!-- operation button -->
+            <button class="opr-key" data-opr="addition">+</button>
+            <button class="opr-key" data-opr="substraction">-</button>
+            <button class="opr-key" data-opr="multiplication">x</button>
+            <button class="opr-key" data-opr="division">/</button>
+            <!-- utility button -->
+            <button class="util-key">del</button>
+            <button class="util-key">reset</button>
+            <!-- equal key -->
+            <button class="equal-key">=</button>
+          </section>
+        </form>
       </div>
 
-      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</div>
+      <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.instagram.com/idpanashari/" target="_blank">idpan</a>.</div>
     </div>
   </body>
+  <script src="./themeToggle.js"></script>
 </html>
